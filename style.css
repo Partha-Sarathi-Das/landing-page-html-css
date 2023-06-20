@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+                                                
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    opacity: .8;
+    
+}
+#rtop{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+#rbottom{
+    height: 50%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1507598641400-ec3536ba81bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-size: cover;
+}
+#rtleft{
+    height: 100%;
+    width: 55%;
+    background: url(https://images.unsplash.com/photo-1555231955-348aa2312e19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-size: cover;
+
+}
+#rtright{
+    height: 100%;
+    width: 45%;
+    background: url(https://images.unsplash.com/photo-1580052614034-c55d20bfee3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#nav{
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: space-between;  /*This applies space between #navlt and #navrt*/
+}
+#navrt > a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 550;
+    color: black;
+    
+}
+#navrt>i{
+    color: royalblue;
+}
+#navrt{
+    display: flex;
+    align-items: center;
+}
+
+#centertext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#centertext>h1{
+    font-size: 100px;
+    font-weight: 800;
+}
+#centertext>p{
+    font-size: 15px;
+    opacity: .7;
+    line-height: 20px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+#centertext>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid black;
+    opacity: .6;
+}
+
+/*Making it Responsive*/
+
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+    #main>#left{
+        width: 100%;
+
+    }
+    #main>#right{
+        width: 100%;
+    }
+}
